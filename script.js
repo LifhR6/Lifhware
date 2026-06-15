@@ -1,13 +1,16 @@
 function unlockVault() {
+  const door = document.getElementById("door");
   const status = document.getElementById("status");
-  status.innerText = "Unlocking vault...";
+
+  status.innerText = "Cracking vault...";
 
   setTimeout(() => {
-    status.innerText = "Access Granted → Redirecting...";
-    
+    door.classList.add("open");
+    status.innerText = "ACCESS GRANTED";
+
     setTimeout(() => {
       window.location.href = "https://discord.gg/8ffj6BeHmC";
-    }, 1500);
+    }, 2000);
 
-  }, 2000);
+  }, 1500);
 }
