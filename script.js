@@ -1,4 +1,4 @@
-function enterVault() {
+<button onclick="enterVault()" class="enter-btn">
   const btn = document.querySelector(".enter-btn");
   btn.innerText = "UNLOCKING...";
   btn.disabled = true;
