@@ -1,16 +1,13 @@
-<button onclick="enterVault()" class="enter-btn">
-  const btn = document.querySelector(".enter-btn");
-  btn.innerText = "UNLOCKING...";
-  btn.disabled = true;
+function unlockVault() {
+  const status = document.getElementById("status");
+  status.innerText = "Unlocking vault...";
 
   setTimeout(() => {
-    window.open("https://discord.gg/8ffj6BeHmC", "_blank");
-
-    document.getElementById("entryScreen").style.opacity = "0";
+    status.innerText = "Access Granted → Redirecting...";
+    
     setTimeout(() => {
-      document.getElementById("entryScreen").style.display = "none";
-      document.getElementById("mainSite").classList.remove("hidden");
-    }, 500);
+      window.location.href = "https://discord.gg/8ffj6BeHmC";
+    }, 1500);
 
-  }, 1200);
+  }, 2000);
 }
