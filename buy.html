@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+<div class="logo">PRODUCTS</div>
+<a class="btn" href="index.html">Home</a>
+</nav>
+
+<div class="hero">
+<h1>PRODUCTS</h1>
+<p>Select a digital item</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>Product A</h3>
+<p>Preview item</p>
+<button class="btn" onclick="openModal()">View</button>
+</div>
+
+<div class="card">
+<h3>Product B</h3>
+<p>Preview item</p>
+<button class="btn" onclick="openModal()">View</button>
+</div>
+</div>
+
+<div class="modal-bg" id="modal">
+<div class="modal">
+<h3>Product Preview</h3>
+<p>This is a UI demo modal.</p>
+<button class="btn" onclick="closeModal()">Close</button>
+</div>
+</div>
+
+<script>
+function openModal(){
+document.getElementById('modal').style.display='flex';
+}
+function closeModal(){
+document.getElementById('modal').style.display='none';
+}
+</script>
+
+</div>
+</body>
+</html>
