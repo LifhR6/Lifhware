@@ -1,0 +1,4 @@
+function enterVault() {
+  document.getElementById("entryScreen").style.display = "none";
+  document.getElementById("mainSite").classList.remove("hidden");
+}
